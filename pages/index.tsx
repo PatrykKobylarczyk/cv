@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../assets/images/IMG_2743.jpg";
+import profile from "../assets/images/profile.jpg";
 import SocialMedia from "@/components/SocialMedia";
 import About from "@/components/About";
 import ContactButtons from "@/components/ContactButtons";
