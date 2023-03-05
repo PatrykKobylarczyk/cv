@@ -1,12 +1,14 @@
 import { projectsData } from "@/data/projectsData";
 import React from "react";
 
-const Projects = () => {
-  
+
+const Projects = ({language}:any) => {
+  const lang = language === "EN"
+
   const projects = projectsData.map(
-    ({ name, title, date, description, stack, id, links }: any) => {
+    ({ name, titlePL, titleEN, date, descriptionPL, descriptionEN, stack, id, links }: any) => {
       return (
-        <div id={id} className="flex px-3 md:px-16 text-base">
+        <div key={id} id={id} className="flex px-3 md:px-16 text-base">
           <div className="w-full py-10 col-span-1  border-r-[1px] br-gray-700 flex justify-end items-start">
             <div className="flex flex-col items-end mr-5 gap-5">
               <h2 className="font-bold">{name}</h2>
@@ -16,9 +18,9 @@ const Projects = () => {
           <div className="w-full py-10 col-span-1  ml-5">
             <div className="flex flex-col items-start gap-5">
               <div className="w-full flex justify-between items-start">
-                <h2 className="font-bold">{title}</h2>
+                <h2 className="font-bold">{lang ? titleEN : titlePL}</h2>
               </div>
-              <p>{description}</p>
+              <p>{lang ? descriptionEN : descriptionPL}</p>
               <ul className="flex flex-wrap text-lg gap-2">
                 {stack.map((el: any, i: number) => (
                   <li key={i} className="tooltip cursor-pointer">

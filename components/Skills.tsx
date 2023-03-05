@@ -18,7 +18,6 @@ const skills = [
   { name: "Lightroom", level: 4 },
 ];
 
-
 const skillRange = [1, 2, 3, 4, 5];
 
 const Skills = () => {
@@ -27,12 +26,16 @@ const Skills = () => {
       <ul>
         {skills.map((skill: any, i: number) => {
           return (
-            <li key={i} className="w-80 sm:w-72 md:w-80 lg:w-96 flex justify-between items-center mb-2">
+            <li
+              key={i}
+              className="w-80 sm:w-72 md:w-80 lg:w-96 flex justify-between items-center mb-2"
+            >
               <p className="w-20 md:36 font-semibold">{skill.name}</p>
               <div className="flex gap-2">
                 {skillRange.map((el: number) => {
                   return (
                     <span
+                      key={el}
                       className={`w-5 h-2 rounded-lg ${
                         el <= skill.level ? "bg-slate-700" : "bg-slate-300"
                       } `}
