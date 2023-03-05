@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-   @apply text-gray-600 font-[Raleway] box-border
+   @apply text-gray-600 font-[Raleway] 
   }
 
   main{
@@ -42,7 +42,7 @@
   color: #fff;
   font-size: 11px;
   text-align: center;
-  border-radius: 8px 8px 8px 0;
+  border-radius: 8px 8px 0 8px;
   padding: 4px 0;
   
   /* Position the tooltip */
@@ -50,7 +50,7 @@
   z-index: 1;
   bottom: 100%;
   left: 50%;
-  margin-left: 5px;
+  margin-left: -105px;
 }
 
 .tooltip:hover .tooltiptext {

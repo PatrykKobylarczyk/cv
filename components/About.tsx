@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <p className="text-xs md:text-sm mb-4">Front End Developer</p>
-      <h2 className="text-4xl md:text-5xl font-extrabold mb-10 ">Patryk Kobylarczyk</h2>
-      <div className="text-xs md:text-sm lg:text-base flex flex-col gap-6">
+      <h2 className="text-4xl 2xl:text-5xl font-extrabold mb-6 2xl:mb-10 ">Patryk Kobylarczyk</h2>
+      <div className="text-sm 2xl:text-base flex flex-col gap-6">
         <p>
           Front End Developer z wieloletnim doświadczeniem, któremu bliżej do
           Javascript developera niż do developera jednego freameworka. Lubię
