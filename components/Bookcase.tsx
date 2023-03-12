@@ -47,6 +47,7 @@ const Bookcase = () => {
         ({ id, title, author, authorLink, imageLink, link }: any) => {
           return (
             <Book
+              key={id}
               id={id}
               title={title}
               author={author}
