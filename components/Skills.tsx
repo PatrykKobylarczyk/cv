@@ -24,7 +24,7 @@ const Skills = () => {
   return (
     <div className="text-xs md:text-base w-full flex justify-center py-10 px-5">
       <ul>
-        {skills.map((skill: any, i: number) => {
+        {skills.map((skill: { name: string; level: number }, i: number) => {
           return (
             <li
               key={i}

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { langEN, langPL } from "@/data/langPack";
+import React from "react";
 
 const About = ({ lang }: any) => {
   return (

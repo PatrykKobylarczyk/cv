@@ -2,7 +2,16 @@ import { booksIT, booksOther } from "@/data/booksData";
 import Image from "next/image";
 import React from "react";
 
-export const Book = ({ title, author, authorLink, imageLink, link }: any) => {
+interface IBook {
+  id: number,
+  title: string , 
+  author: string ,
+  authorLink: string,
+  imageLink: string,
+  link: string
+}
+
+export const Book = ({ title, author, authorLink, imageLink, link }: IBook) => {
   const resetStyle = "bg-transparent rounded-none w-auto h-auto";
 
   return (
@@ -44,7 +53,7 @@ const Bookcase = () => {
   return (
     <div className="flex flex-wrap gap-8">
       {booksOther.map(
-        ({ id, title, author, authorLink, imageLink, link }: any) => {
+        ({ id, title, author, authorLink, imageLink, link }: IBook) => {
           return (
             <Book
               key={id}

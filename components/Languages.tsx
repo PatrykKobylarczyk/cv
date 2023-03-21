@@ -8,11 +8,11 @@ const languages = [
 
 const skillRange = [1, 2, 3, 4, 5];
 
-const Languages = ({ language }: any) => {
+const Languages = () => {
   return (
     <div className="text-xs md:text-base w-full flex justify-center py-10 px-5">
       <ul>
-        {languages.map((lang: any, i: number) => {
+        {languages.map((lang: { name: string; level: number }, i: number) => {
           return (
             <li
               key={i}

@@ -13,9 +13,15 @@ import Experience from "@/components/Experience";
 import Bookcase from "@/components/Bookcase";
 import { langEN, langPL } from "@/data/langPack";
 
+interface ILang {
+  about_paragraph_1: string;
+  about_paragraph_2: string;
+  about_paragraph_3: string;
+}
+
 const Home = () => {
-  const [language, setLanguage] = useState("EN");
-  const [lang, setLang] = useState(langEN);
+  const [language, setLanguage] = useState<string>("EN");
+  const [lang, setLang] = useState<ILang>(langEN);
 
   const handleChooseLanguage = () => {
     setLanguage(language === "EN" ? "PL" : "EN");
@@ -80,7 +86,7 @@ const Home = () => {
             <h2 className="font-bold text-lg ml-8 md:ml-16 ">
               {language === "EN" ? "Languages" : "Języki"}
             </h2>
-            <Languages language={language} />
+            <Languages/>
             <h2 className="font-bold text-lg ml-8 md:ml-16 ">
               {language === "EN" ? "Hobby" : "Zainteresowania"}
             </h2>
@@ -96,7 +102,6 @@ const Home = () => {
           <Bookcase />
         </section>
         <section className="relative w-full bg-gray-100 px-8 lg:px-20 py-20">
-          {" "}
           <button
             className="absolute bottom-10 right-10 w-12 h-12 grid place-items-center text-xs font-semibold px-0"
             onClick={handleChooseLanguage}
