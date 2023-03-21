@@ -8,7 +8,8 @@ import {
   SiSass,
   SiTailwindcss,
   SiTypescript,
-  SiAxios
+  SiAxios,
+  SiFramer
 } from "react-icons/si";
 import { BsStripe } from "react-icons/bs";
 import { HiOutlineChartSquareBar } from "react-icons/hi";
@@ -36,20 +37,20 @@ export const projectsData = [
     links: [
       {
         name: "github",
-        link: "https://github.com/PatrykKobylarczyk/duo-milonga",
+        link: "https://github.com/PatrykKobylarczyk/dashboard-next-tailwind",
       },
       {
         name: "live",
-        link: "https://duomilonga.pl/",
+        link: "https://dashboard-next-tailwind-liart.vercel.app/",
       },
     ],
   },
   {
     id: 2,
     name: "Fishky",
-    date: "03/2023-03/2023",
-    titlePL: "Fishky.",
-    titleEN: "Fishky.",
+    date: "02/2023-03/2023",
+    titlePL: "Popularne fiszki",
+    titleEN: "Popular Flashcards.",
     descriptionPL:
       "Aplikacja z popularnymi fiszkami do nauki języków lub cokolwiek sobie wymarzysz.",
     descriptionEN:
@@ -58,6 +59,7 @@ export const projectsData = [
       { name: "Next", icon: <SiNextdotjs /> },
       { name: "Typescript", icon: <SiTypescript /> },
       { name: "Firebase", icon: <SiFirebase /> },
+      { name: "Framer motion", icon: <SiFramer /> },
       { name: "React hook form", icon: <AiOutlineForm /> },
       { name: "Sass", icon: <SiSass /> },
     ],
@@ -86,6 +88,7 @@ export const projectsData = [
       { name: "Gatsby", icon: <SiGatsby /> },
       { name: "GraphQL", icon: <SiGraphql /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Framer motion", icon: <SiFramer /> },
     ],
     links: [
       {
@@ -129,29 +132,53 @@ export const projectsData = [
   {
     id: 5,
     name: "Weather App",
-    date: "06/2022-07/2022",
+    date: "07/2022",
     titlePL: "Aplikacja pogodowa.",
     titleEN: "Weather App.",
     descriptionPL:
-      "Aplikacja pobiera dane pogodowe poprzez API z serwisu openweathermap.org, jest całkowicie responsywna.",
+      "Aplikacja pogodowa wykorzystująca dane z serwisu OpenWeatherMap. Wpisz nazwę miasta i sprawdź aktualną pogodę, jak również na następny tydzień.",
     descriptionEN:
-      "The application downloads weather data via API from the openweathermap.org service, it is completely responsive.",
+      "Weather app using data from OpenWeatherMap. Write a city name and check actual weather and forecast for following week.",
     stack: [
       { name: "React", icon: <SiReact /> },
       { name: "Sass", icon: <SiSass /> },
       { name: "Axios", icon: <SiAxios /> },
-
     ],
     links: [
       {
         name: "github",
-        link: "https://github.com/PatrykKobylarczyk/Netflix",
+        link: "https://github.com/PatrykKobylarczyk/weather-app",
       },
       {
         name: "live",
-        link: "https://netflix-peach-ten.vercel.app/",
+        link: "https://weather-app-patrykkobylarczyk.vercel.app/",
       },
     ],
   },
+  {
+    id: 6,
+    name: "Pixel art App",
+    date: "06/2022",
+    titlePL: "Pixel art App.",
+    titleEN: "Pixel art App.",
+    descriptionPL:
+      "Jest to moja pierwsza aplikacja - pixel art drawing editor. Dynamicznie konfiguruj wymiary panelu rysunkowego, pokoloruj piksele według własnych upodobań i wyeksportuj gotowy element jako obraz PNG.",
+    descriptionEN:
+      "This is my first App - pixel art drawing editor in React. Dynamically set up drawing panel dimensions, color the pixels to your liking and export your finished piece as a PNG sprite.",
+    stack: [
+      { name: "React", icon: <SiReact /> },
+      { name: "Sass", icon: <SiSass /> },
   
+    ],
+    links: [
+      {
+        name: "github",
+        link: "https://github.com/PatrykKobylarczyk/pixel-art",
+      },
+      {
+        name: "live",
+        link: "https://patrykkobylarczyk.github.io/pixel-art/",
+      },
+    ],
+  },
 ];
