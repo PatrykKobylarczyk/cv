@@ -23,9 +23,9 @@ export const projectsData = [
     titlePL: "Dashboard",
     titleEN: "Dashboard.",
     descriptionPL:
-      "Celem projektu było odtworzenie Dashboardu wzorując się na projekcie znalezionym na Behance. Do obsługi wykresów zaimplementowałem bibliotekę charts.js, do logowania Firebase Authentication, do przechowywania danych połączyłem aplikację z Bazą danych Firestore, formularze obsługuje bibliotek React-hook-form.",
+      "Celem projektu było odtworzenie Dashboardu wzorując się na projekcie znalezionym na Behance. Do obsługi wykresów zaimplementowałem bibliotekę charts.js, do logowania Firebase Authentication. Do przechowywania danych połączyłem aplikację z Bazą danych Firestore. Formularze obsługuje bibliotek React-hook-form.",
     descriptionEN:
-      "The aim of the project was to recreate the Dashboard based on the project found on Behance. I implemented the charts.js library to handle charts, Firebase Authentication to log in, I connected the application to the Firestore Database to store data, forms are supported by React-hook-form libraries.",
+      "The aim of the project was to recreate the Dashboard based on the project found on Behance. I implemented the charts.js library to handle charts, Firebase Authentication to log in. I connected the application to the Firestore Database to store data. Forms are supported by React-hook-form libraries.",
     stack: [
       { name: "Next", icon: <SiNextdotjs /> },
       { name: "Typescript", icon: <SiTypescript /> },
